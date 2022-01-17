@@ -1,15 +1,19 @@
 
 
+class player {
 
-
-class boardPiece {
-    construtor() {
-
-
-    }
-
-    position
 }
+
+class Piece {
+    construtor() {
+    this.position = board[0][0];
+    this.height = height;
+    this.width = width;
+    }
+    get_position();
+    get_
+}
+
 
 
 
@@ -42,11 +46,25 @@ function createBoard(){
         }
     }
 
-
-function resetBoard(){
-
-}
-
-function isWinner(){
+function start() {
 
 }
+function setBoard(){
+
+}
+function isCheck(){
+    
+}
+
+function isCheckmate(){
+
+}
+//I need a controller which has a board object and 2 player objects that alternate between turns. Each action will allow 
+// inside while loop
+function doturnplayer_1(){
+
+}
+function doturnplayer_2(){
+
+}
+// close while loop 
