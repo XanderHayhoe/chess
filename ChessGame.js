@@ -1,23 +1,39 @@
 
-
+const startFEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
 class player {
 
 }
 
 class Piece {
     construtor() {
-    this.position = board[0][0];
-    this.height = height;
-    this.width = width;
+    const King = 1
+    const Pawn = 2;
+    const Knight = 3;
+    const Bishop = 4;
+    const Rook = 5;
+    const Queen = 6;
     }
-    get_position();
-    get_
+    
+
 }
+class board {
+    constructor() {
+        square(64);
+        square[0] = Piece.White | Piece.Bishop;
+        square[63] = Piece.Black | Piece.Knight;
+    }
+}
+var PieceType = {
+    "k" : Piece.King , "q" : Piece.Queen , "b" : Piece.Bishop, 
+    "p" : Piece.Pawn , "k" : Piece.Knight , "r" : Piece.Rook
+};
+
+function load_start(startFEN) {
 
 
 
 
-
+}
 
 
 function createBoard(){
