@@ -1,5 +1,5 @@
 
-const startFEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
+const fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
 class player {
 
 }
@@ -18,9 +18,7 @@ class Piece {
 }
 class board {
     constructor() {
-        square(64);
-        square[0] = Piece.White | Piece.Bishop;
-        square[63] = Piece.Black | Piece.Knight;
+        
     }
 }
 var PieceType = {
@@ -28,9 +26,24 @@ var PieceType = {
     "p" : Piece.Pawn , "k" : Piece.Knight , "r" : Piece.Rook
 };
 
-function load_start(startFEN) {
-
-
+function load_start(fen) {
+    var fenBoard =  fen.Split(' ')[0]
+    var file = 0;
+    var rank = 7;
+    for (let i = 0; i < fen.length; i++ ) {
+        if (symbol == '/') {
+            file = 0;
+            rank --;
+        }
+        else {
+            if (CharacterData.IsDigit(symbol)) {
+                file += CharacterData.ParseInt(symbol);
+            } else {
+                
+            }
+        }
+        }
+    }
 
 
 }
